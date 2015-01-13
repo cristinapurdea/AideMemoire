@@ -5,7 +5,6 @@
     xmlns:android="http://schemas.android.com/apk/res/android">
 
 
-
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -15,7 +14,7 @@
         android:textColor="#000000"
         android:layout_gravity="center"
         android:textIsSelectable="true"
-        android:textSize="50dp" />
+        android:textSize="35dp" />
 
     <RelativeLayout
     android:layout_width="fill_parent"
@@ -27,7 +26,7 @@
         <Button
             android:id="@+id/button_maison"
             android:background="@drawable/maison"
-            android:layout_width="400dp"
+            android:layout_width="300dp"
             android:layout_height="400dp"
             android:layout_alignParentLeft="true"
             android:adjustViewBounds="true"
@@ -40,7 +39,7 @@
         <Button
             android:id="@+id/button_saisons"
             android:background="@drawable/saisons"
-            android:layout_width="400dp"
+            android:layout_width="300dp"
             android:layout_height="400dp"
             android:layout_alignParentRight="true"
             android:adjustViewBounds="true"
@@ -50,6 +49,7 @@
             android:textStyle="bold"
             android:gravity="bottom|center"
             android:textSize="30dp"/>
+
     </RelativeLayout>
 
     <RelativeLayout
@@ -75,7 +75,7 @@
         <Button
             android:id="@+id/button_shopping"
             android:background="@drawable/shopping"
-            android:layout_width="400dp"
+            android:layout_width="300dp"
             android:layout_height="400dp"
             android:layout_alignParentLeft="true"
             android:adjustViewBounds="true"
@@ -88,7 +88,7 @@
         <Button
             android:id="@+id/button_promenade"
             android:background="@drawable/promenade"
-            android:layout_width="400dp"
+            android:layout_width="300dp"
             android:layout_height="400dp"
             android:layout_alignParentRight="true"
             android:adjustViewBounds="true"
