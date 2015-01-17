@@ -1,6 +1,7 @@
 package com.example.bu.troissurquatre;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -56,8 +57,11 @@ public class MainActivity extends Activity {
             @Override
             public void onClick(View v) {
                 //Toast.makeText(MainActivity.this, "MAISON", Toast.LENGTH_SHORT).show();
-                mToast.setText( "MAISON" );
-                mToast.show();
+                //mToast.setText( "MAISON" );
+                //mToast.show();
+
+                Intent intent = new Intent(getApplicationContext(), MaisonActivity.class);
+                startActivity(intent);
             }
         });
 
