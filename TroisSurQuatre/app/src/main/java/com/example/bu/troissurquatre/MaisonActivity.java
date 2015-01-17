@@ -50,7 +50,7 @@ public class MaisonActivity extends Activity {
         if(clickedButton.getId() == R.id.cheval_button)
             clickedButton.setText("Réessayez");
         else
-            clickedButton.setText("Bravo ! Il reste encore "+ --correctFinds +" réponses");
+            clickedButton.setText("Bravo ! \n Il reste encore "+ --correctFinds +" réponses");
 
         clickedButton.setBackgroundColor(Color.LTGRAY);
     }
