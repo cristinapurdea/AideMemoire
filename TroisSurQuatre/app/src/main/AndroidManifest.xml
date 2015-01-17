@@ -29,6 +29,12 @@
             android:screenOrientation="landscape">
 
         </activity>
+        <activity
+            android:name=".MaisonActivity"
+            android:label="@string/title_activity_maison"
+            android:screenOrientation="landscape">
+
+        </activity>
     </application>
 
 </manifest>
