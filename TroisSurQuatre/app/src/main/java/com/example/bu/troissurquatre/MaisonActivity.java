@@ -1,6 +1,7 @@
 package com.example.bu.troissurquatre;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.view.Menu;
@@ -13,7 +14,7 @@ import android.widget.Button;
  */
 public class MaisonActivity extends Activity {
 
-    private int correctFinds = 3;
+    private int correctFinds = 2;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -43,15 +44,20 @@ public class MaisonActivity extends Activity {
         return super.onOptionsItemSelected(item);
     }
 
-    public void buttonClick(View v)
-    {
-        Button clickedButton = (Button)findViewById(v.getId());
+    public void buttonClick(View v) {
+        Button clickedButton = (Button) findViewById(v.getId());
 
-        if(clickedButton.getId() == R.id.cheval_button)
+        if (clickedButton.getId() == R.id.cheval_button)
             clickedButton.setText("Réessayez");
-        else
-            clickedButton.setText("Bravo ! \n Il reste encore "+ --correctFinds +" réponses");
-
-        clickedButton.setBackgroundColor(Color.LTGRAY);
+        else {
+            if (correctFinds > -1) {
+                clickedButton.setText("Bravo ! \n Il reste encore " + correctFinds-- + " réponses");
+                clickedButton.setBackgroundColor(Color.LTGRAY);
+            }
+            if (correctFinds < 0 ) {
+                Intent intent = new Intent(getApplicationContext(), InformationActivity.class);
+                startActivity(intent);
+            }
+        }
     }
 }
