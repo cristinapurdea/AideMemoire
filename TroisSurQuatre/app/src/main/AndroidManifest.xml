@@ -27,13 +27,44 @@
             android:name=".InformationActivity"
             android:label="@string/title_activity_information"
             android:screenOrientation="landscape">
-
+        </activity>
+        <activity
+            android:name=".InformationActivity_1"
+            android:label="@string/title_activity_information"
+            android:screenOrientation="landscape">
+        </activity>
+        <activity
+            android:name=".InformationActivity_2"
+            android:label="@string/title_activity_information"
+            android:screenOrientation="landscape">
+        </activity>
+        <activity
+            android:name=".InformationActivity_3"
+            android:label="@string/title_activity_information"
+            android:screenOrientation="landscape">
         </activity>
         <activity
             android:name=".MaisonActivity"
             android:label="@string/title_activity_maison"
             android:screenOrientation="landscape">
+        </activity>
 
+        <activity
+            android:name=".MaisonActivity_1"
+            android:label="@string/title_activity_maison"
+            android:screenOrientation="landscape">
+        </activity>
+
+        <activity
+            android:name=".MaisonActivity_2"
+            android:label="@string/title_activity_maison"
+            android:screenOrientation="landscape">
+        </activity>
+
+        <activity
+            android:name=".MaisonActivity_3"
+            android:label="@string/title_activity_maison"
+            android:screenOrientation="landscape">
         </activity>
     </application>
 

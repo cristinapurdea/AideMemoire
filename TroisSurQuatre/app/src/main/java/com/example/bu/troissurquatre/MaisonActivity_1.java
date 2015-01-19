@@ -14,9 +14,9 @@ import android.widget.ImageButton;
 import android.widget.TextView;
 
 /**
- * Created by Cristina Purdea on 17/01/15.
+ * Created by Tony on 17/01/15.
  */
-public class MaisonActivity extends Activity {
+public class MaisonActivity_1 extends Activity {
 
     private int correctFinds = 2;
 
@@ -38,10 +38,10 @@ public class MaisonActivity extends Activity {
         Button bt3 = (Button) findViewById(R.id.answer_3);
         Button bt4 = (Button) findViewById(R.id.answer_4);
 
-        Drawable d1 = getResources().getDrawable(R.drawable.chat);
-        Drawable d2 = getResources().getDrawable(R.drawable.chien);
-        Drawable d3 = getResources().getDrawable(R.drawable.monkey);
-        Drawable d4 = getResources().getDrawable(R.drawable.horse);
+        Drawable d1 = getResources().getDrawable(R.drawable.lit);
+        Drawable d2 = getResources().getDrawable(R.drawable.piscine);
+        Drawable d3 = getResources().getDrawable(R.drawable.table);
+        Drawable d4 = getResources().getDrawable(R.drawable.armoire);
 
         bt1.setBackground(d1);
         bt2.setBackground(d2);
@@ -55,11 +55,11 @@ public class MaisonActivity extends Activity {
         TextView tv4 = (TextView) findViewById(R.id.textView9);
         TextView tv5 = (TextView) findViewById(R.id.textView10);
 
-        tv1.setText("Sélectionnez les animaux qu'on peut garder à la maison");
-        tv2.setText("Chat");
-        tv3.setText("Chien");
-        tv4.setText("Singe");
-        tv5.setText("Cheval");
+        tv1.setText("Sélectionnez les objets qu'on peut trouver dans une chambre");
+        tv2.setText("Lit");
+        tv3.setText("Piscine");
+        tv4.setText("Table");
+        tv5.setText("Armoire");
 
     }
 
@@ -88,7 +88,7 @@ public class MaisonActivity extends Activity {
     public void buttonClick(View v) {
         Button clickedButton = (Button) findViewById(v.getId());
 
-        if (clickedButton.getId() == R.id.answer_3)
+        if (clickedButton.getId() == R.id.answer_2)
             clickedButton.setText("Réessayez");
         else {
             if (correctFinds > -1) {
@@ -96,7 +96,7 @@ public class MaisonActivity extends Activity {
                 clickedButton.setBackgroundColor(Color.LTGRAY);
             }
             if (correctFinds < 0 ) {
-                Intent intent = new Intent(getApplicationContext(), InformationActivity.class);
+                Intent intent = new Intent(getApplicationContext(), InformationActivity_1.class);
                 startActivity(intent);
             }
         }

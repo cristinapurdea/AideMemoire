@@ -12,7 +12,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 
-public class InformationActivity extends Activity {
+public class InformationActivity_3 extends Activity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,19 +22,18 @@ public class InformationActivity extends Activity {
         Button button = (Button) findViewById(R.id.button);
         button.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                Intent intent = new Intent(getApplicationContext(), MaisonActivity_1.class);
+                Intent intent = new Intent(getApplicationContext(), MainActivity.class);
                 startActivity(intent);
             }
         });
 
         TextView tv = (TextView) findViewById(R.id.textView5);
-        tv.setText("Savez-vous qu'en France, plus d'un foyer sur deux possède un animal de compagnie ? \nLa France occupe la 1ere place des possesseurs d'animaux de compagnie en Europe" );
+        tv.setText("Respectez les règles hygieniques pour être en bonne santé !" );
 
         ImageView iv = (ImageView) findViewById(R.id.imageView2);
         iv.setImageResource(R.drawable.info_img);
 
     }
-
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {

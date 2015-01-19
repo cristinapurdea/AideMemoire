@@ -10,7 +10,6 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/imageView2"
-        android:background="@drawable/info_img"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:maxWidth="300dp" />
@@ -36,7 +35,6 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="Savez-vous qu&apos;en France, plus d&apos;un foyer sur deux possède un animal de compagnie ? \n La France occupe la 1ere place des possesseurs d&apos;animaux de compagnie en Europe"
         android:id="@+id/textView5"
         android:textSize="30dp"
         android:layout_below="@+id/textView4"

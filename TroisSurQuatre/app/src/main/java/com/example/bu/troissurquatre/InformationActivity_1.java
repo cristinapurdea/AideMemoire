@@ -12,7 +12,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 
-public class InformationActivity extends Activity {
+public class InformationActivity_1 extends Activity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,13 +22,13 @@ public class InformationActivity extends Activity {
         Button button = (Button) findViewById(R.id.button);
         button.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                Intent intent = new Intent(getApplicationContext(), MaisonActivity_1.class);
+                Intent intent = new Intent(getApplicationContext(), MaisonActivity_2.class);
                 startActivity(intent);
             }
         });
 
         TextView tv = (TextView) findViewById(R.id.textView5);
-        tv.setText("Savez-vous qu'en France, plus d'un foyer sur deux possède un animal de compagnie ? \nLa France occupe la 1ere place des possesseurs d'animaux de compagnie en Europe" );
+        tv.setText("Savez vous que l’hotel le plus cher du monde est l’hotel Président Wilson, et il se trouve a Genève" );
 
         ImageView iv = (ImageView) findViewById(R.id.imageView2);
         iv.setImageResource(R.drawable.info_img);
