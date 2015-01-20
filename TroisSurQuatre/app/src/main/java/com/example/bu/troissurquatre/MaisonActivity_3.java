@@ -19,6 +19,7 @@ import android.widget.TextView;
 public class MaisonActivity_3 extends Activity {
 
     private int correctFinds = 2;
+    private TextView tv1;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -48,15 +49,14 @@ public class MaisonActivity_3 extends Activity {
         bt3.setBackground(d3);
         bt4.setBackground(d4);
 
-
-        TextView tv1 = (TextView) findViewById(R.id.textView6);
+        tv1 = (TextView) findViewById(R.id.textView6);
         TextView tv2 = (TextView) findViewById(R.id.textView7);
         TextView tv3 = (TextView) findViewById(R.id.textView8);
         TextView tv4 = (TextView) findViewById(R.id.textView9);
         TextView tv5 = (TextView) findViewById(R.id.textView10);
 
         tv1.setText("Choisir les tâches que l’on peut faire le matin ");
-        tv2.setText("Se brosser les dents");
+        tv2.setText("Brosser les dents");
         tv3.setText("Petit déjeuner");
         tv4.setText("Se doucher");
         tv5.setText("Diner");
@@ -87,17 +87,24 @@ public class MaisonActivity_3 extends Activity {
 
     public void buttonClick(View v) {
         Button clickedButton = (Button) findViewById(v.getId());
+        if (!clickedButton.getText().equals("Bravo !")) {
+            if (clickedButton.getId() == R.id.answer_4)
+                clickedButton.setText("Réessayez");
+            else {
+                if (correctFinds > -1) {
+                    clickedButton.setText("Bravo !");
+                    clickedButton.setBackgroundColor(Color.LTGRAY);
 
-        if (clickedButton.getId() == R.id.answer_4)
-            clickedButton.setText("Réessayez");
-        else {
-            if (correctFinds > -1) {
-                clickedButton.setText("Bravo ! \n Il reste encore " + correctFinds-- + " réponses");
-                clickedButton.setBackgroundColor(Color.LTGRAY);
-            }
-            if (correctFinds < 0 ) {
-                Intent intent = new Intent(getApplicationContext(), InformationActivity_3.class);
-                startActivity(intent);
+                    if (correctFinds == 1)
+                        tv1.setText("Choisir " + correctFinds-- + " tâche que l’on peut faire le matin ");
+                    else
+                        tv1.setText("Choisir " + correctFinds-- + " tâches que l’on peut faire le matin ");
+
+                }
+                if (correctFinds < 0) {
+                    Intent intent = new Intent(getApplicationContext(), InformationActivity_3.class);
+                    startActivity(intent);
+                }
             }
         }
     }

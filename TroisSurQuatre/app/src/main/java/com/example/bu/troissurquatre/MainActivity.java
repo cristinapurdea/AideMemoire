@@ -95,7 +95,7 @@ public class MainActivity extends Activity {
             }
         });
 
-        final Button button_aleatoire = (Button) findViewById(R.id.button_aleatoire);
+        /*final Button button_aleatoire = (Button) findViewById(R.id.button_aleatoire);
         button_aleatoire.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -103,6 +103,6 @@ public class MainActivity extends Activity {
                 mToast.setText( "ALEATOIRE" );
                 mToast.show();
             }
-        });
+        });*/
     }
 }

@@ -1,6 +1,7 @@
 package com.example.bu.troissurquatre;
 
 import android.app.Activity;
+import android.app.AlertDialog;
 import android.content.Intent;
 import android.graphics.Color;
 import android.graphics.drawable.Drawable;
@@ -19,6 +20,7 @@ import android.widget.TextView;
 public class MaisonActivity extends Activity {
 
     private int correctFinds = 2;
+    private TextView tv1;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -48,8 +50,7 @@ public class MaisonActivity extends Activity {
         bt3.setBackground(d3);
         bt4.setBackground(d4);
 
-
-        TextView tv1 = (TextView) findViewById(R.id.textView6);
+        tv1 = (TextView) findViewById(R.id.textView6);
         TextView tv2 = (TextView) findViewById(R.id.textView7);
         TextView tv3 = (TextView) findViewById(R.id.textView8);
         TextView tv4 = (TextView) findViewById(R.id.textView9);
@@ -60,7 +61,6 @@ public class MaisonActivity extends Activity {
         tv3.setText("Chien");
         tv4.setText("Singe");
         tv5.setText("Cheval");
-
     }
 
     @Override
@@ -88,16 +88,24 @@ public class MaisonActivity extends Activity {
     public void buttonClick(View v) {
         Button clickedButton = (Button) findViewById(v.getId());
 
-        if (clickedButton.getId() == R.id.answer_3)
-            clickedButton.setText("Réessayez");
-        else {
-            if (correctFinds > -1) {
-                clickedButton.setText("Bravo ! \n Il reste encore " + correctFinds-- + " réponses");
-                clickedButton.setBackgroundColor(Color.LTGRAY);
-            }
-            if (correctFinds < 0 ) {
-                Intent intent = new Intent(getApplicationContext(), InformationActivity.class);
-                startActivity(intent);
+        if(!clickedButton.getText().equals("Bravo !")) {
+
+            if (clickedButton.getId() == R.id.answer_3)
+                clickedButton.setText("Réessayez");
+            else {
+                if (correctFinds > -1) {
+                    clickedButton.setText("Bravo !");
+                    clickedButton.setBackgroundColor(Color.LTGRAY);
+
+                    if (correctFinds == 1)
+                        tv1.setText("Sélectionne " + correctFinds-- + " animal qu'on peut garder à la maison");
+                    else
+                        tv1.setText("Sélectionne " + correctFinds-- + " animaux qu'on peut garder à la maison");
+                }
+                if (correctFinds < 0) {
+                    Intent intent = new Intent(getApplicationContext(), InformationActivity.class);
+                    startActivity(intent);
+                }
             }
         }
     }
