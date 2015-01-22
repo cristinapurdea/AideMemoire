@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.bu.troissurquatre" >
-
+    <uses-sdk
+        android:minSdkVersion="16" />
     <application
         android:allowBackup="true"
         android:icon="@drawable/ic_launcher"
@@ -27,7 +28,144 @@
             android:name=".InformationActivity"
             android:label="@string/title_activity_information"
             android:screenOrientation="landscape">
+        </activity>
+        <activity
+            android:name=".InformationActivity_1"
+            android:label="@string/title_activity_information"
+            android:screenOrientation="landscape">
+        </activity>
+        <activity
+            android:name=".InformationActivity_2"
+            android:label="@string/title_activity_information"
+            android:screenOrientation="landscape">
+        </activity>
+        <activity
+            android:name=".InformationActivity_3"
+            android:label="@string/title_activity_information"
+            android:screenOrientation="landscape">
+        </activity>
+        <activity
+            android:name=".MaisonActivity"
+            android:label="@string/title_activity_maison"
+            android:screenOrientation="landscape">
+        </activity>
 
+        <activity
+            android:name=".MaisonActivity_1"
+            android:label="@string/title_activity_maison"
+            android:screenOrientation="landscape">
+        </activity>
+
+        <activity
+            android:name=".MaisonActivity_2"
+            android:label="@string/title_activity_maison"
+            android:screenOrientation="landscape">
+        </activity>
+
+        <activity
+            android:name=".MaisonActivity_3"
+            android:label="@string/title_activity_maison"
+            android:screenOrientation="landscape">
+        </activity>
+        <activity
+            android:name=".ShoppingActivity"
+            android:label="@string/title_activity_shopping"
+            android:screenOrientation="landscape">
+        </activity>
+        <activity
+            android:name=".ShoppingActivity_1"
+            android:label="@string/title_activity_shopping"
+            android:screenOrientation="landscape">
+        </activity>
+        <activity
+            android:name=".ShoppingActivity_2"
+            android:label="@string/title_activity_shopping"
+            android:screenOrientation="landscape">
+        </activity>
+        <activity
+            android:name=".ShoppingInformationActivity"
+            android:label="@string/title_activity_shopping"
+            android:screenOrientation="landscape">
+        </activity>
+        <activity
+            android:name=".ShoppingInformationActivity_1"
+            android:label="@string/title_activity_shopping"
+            android:screenOrientation="landscape">
+        </activity>
+        <activity
+            android:name=".ShoppingInformationActivity_2"
+            android:label="@string/title_activity_shopping"
+            android:screenOrientation="landscape">
+        </activity>
+        <activity
+            android:name=".SaisonsActivity"
+            android:label="@string/title_activity_saisons"
+            android:screenOrientation="landscape">
+        </activity>
+        <activity
+            android:name=".SaisonsActivity_1"
+            android:label="@string/title_activity_saisons"
+            android:screenOrientation="landscape">
+        </activity>
+        <activity
+            android:name=".SaisonsActivity_2"
+            android:label="@string/title_activity_saisons"
+            android:screenOrientation="landscape">
+        </activity>
+        <activity
+            android:name=".SaisonsInformationActivity"
+            android:label="@string/title_activity_saisons"
+            android:screenOrientation="landscape">
+        </activity>
+        <activity
+            android:name=".SaisonsInformationActivity_1"
+            android:label="@string/title_activity_saisons"
+            android:screenOrientation="landscape">
+        </activity>
+        <activity
+            android:name=".SaisonsInformationActivity_2"
+            android:label="@string/title_activity_saisons"
+            android:screenOrientation="landscape">
+        </activity>
+        <activity
+            android:name=".PromenadeActivity"
+            android:label="@string/title_activity_promenade"
+            android:screenOrientation="landscape">
+        </activity>
+        <activity
+            android:name=".PromenadeActivity_1"
+            android:label="@string/title_activity_promenade"
+            android:screenOrientation="landscape">
+        </activity>
+        <activity
+            android:name=".PromenadeActivity_2"
+            android:label="@string/title_activity_promenade"
+            android:screenOrientation="landscape">
+        </activity>
+        <activity
+            android:name=".PromenadeActivity_3"
+            android:label="@string/title_activity_promenade"
+            android:screenOrientation="landscape">
+        </activity>
+        <activity
+            android:name=".PromenadeInformationActivity"
+            android:label="@string/title_activity_promenade"
+            android:screenOrientation="landscape">
+        </activity>
+        <activity
+            android:name=".PromenadeInformationActivity_1"
+            android:label="@string/title_activity_promenade"
+            android:screenOrientation="landscape">
+        </activity>
+        <activity
+            android:name=".PromenadeInformationActivity_2"
+            android:label="@string/title_activity_promenade"
+            android:screenOrientation="landscape">
+        </activity>
+        <activity
+            android:name=".PromenadeInformationActivity_3"
+            android:label="@string/title_activity_promenade"
+            android:screenOrientation="landscape">
         </activity>
     </application>
 

@@ -1,6 +1,7 @@
 package com.example.bu.troissurquatre;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -56,8 +57,11 @@ public class MainActivity extends Activity {
             @Override
             public void onClick(View v) {
                 //Toast.makeText(MainActivity.this, "MAISON", Toast.LENGTH_SHORT).show();
-                mToast.setText( "MAISON" );
-                mToast.show();
+                //mToast.setText( "MAISON" );
+                //mToast.show();
+
+                Intent intent = new Intent(getApplicationContext(), MaisonActivity.class);
+                startActivity(intent);
             }
         });
 
@@ -66,8 +70,11 @@ public class MainActivity extends Activity {
             @Override
             public void onClick(View v) {
                 //Toast.makeText(MainActivity.this, "4 SAISONS", Toast.LENGTH_SHORT).show();
-                mToast.setText( "4 SAISONS" );
-                mToast.show();
+                //mToast.setText( "4 SAISONS" );
+                //mToast.show();
+
+                Intent intent = new Intent(getApplicationContext(), SaisonsActivity.class);
+                startActivity(intent);
             }
         });
 
@@ -76,8 +83,11 @@ public class MainActivity extends Activity {
             @Override
             public void onClick(View v) {
                 //Toast.makeText(MainActivity.this, "SHOPPING", Toast.LENGTH_SHORT).show();
-                mToast.setText( "SHOPPING" );
-                mToast.show();
+                //mToast.setText( "SHOPPING" );
+                //mToast.show();
+
+                Intent intent = new Intent(getApplicationContext(), ShoppingActivity.class);
+                startActivity(intent);
             }
         });
 
@@ -86,12 +96,14 @@ public class MainActivity extends Activity {
             @Override
             public void onClick(View v) {
                 //Toast.makeText(MainActivity.this, "PROMENADE", Toast.LENGTH_SHORT).show();
-                mToast.setText( "PROMENADE" );
-                mToast.show();
+                //mToast.setText( "PROMENADE" );
+                //mToast.show();
+                Intent intent = new Intent(getApplicationContext(), PromenadeActivity.class);
+                startActivity(intent);
             }
         });
 
-        final Button button_aleatoire = (Button) findViewById(R.id.button_aleatoire);
+        /*final Button button_aleatoire = (Button) findViewById(R.id.button_aleatoire);
         button_aleatoire.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -99,6 +111,6 @@ public class MainActivity extends Activity {
                 mToast.setText( "ALEATOIRE" );
                 mToast.show();
             }
-        });
+        });*/
     }
 }

@@ -52,19 +52,18 @@
 
     </RelativeLayout>
 
-    <RelativeLayout
-    android:layout_width="fill_parent"
-    android:layout_height="wrap_content"
-    android:layout_weight="1"
-    android:gravity="center">
-        <Button
-            android:id="@+id/button_aleatoire"
-            android:layout_width="500dp"
-            android:layout_height="500dp"
-            android:text="ALÉATOIRE"
-            android:adjustViewBounds="true"
-            android:scaleType="fitCenter"
-            android:textSize="34dp"/>
+      <RelativeLayout
+     android:layout_width="fill_parent"
+     android:layout_height="wrap_content"
+     android:layout_weight="1"
+     android:gravity="center">
+        <ImageView
+             android:id="@+id/button_aleatoire"
+             android:layout_width="100dp"
+             android:layout_height="200dp"
+             android:adjustViewBounds="true"
+             android:scaleType="fitCenter"
+             android:textSize="34dp"/>
     </RelativeLayout>
 
     <RelativeLayout
@@ -81,13 +80,13 @@
             android:adjustViewBounds="true"
             android:scaleType="fitCenter"
             android:layout_gravity="center"
-            android:text="Shopping"
+            android:text="Cadeaux"
             android:textStyle="bold"
             android:gravity="bottom|center"
             android:textSize="30dp"/>
         <Button
             android:id="@+id/button_promenade"
-            android:background="@drawable/promenade"
+            android:background="@drawable/promenadeanglais"
             android:layout_width="300dp"
             android:layout_height="400dp"
             android:layout_alignParentRight="true"
