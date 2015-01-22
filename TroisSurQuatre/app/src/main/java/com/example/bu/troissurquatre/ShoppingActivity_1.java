@@ -23,7 +23,11 @@ public class ShoppingActivity_1 extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+<<<<<<< HEAD
         setContentView(R.layout.activity_maison);
+=======
+        setContentView(R.layout.activity_shopping);
+>>>>>>> FETCH_HEAD
 
         final ImageButton button = (ImageButton) findViewById(R.id.imageButton4);
         button.setOnClickListener(new View.OnClickListener() {
@@ -96,9 +100,15 @@ public class ShoppingActivity_1 extends Activity {
                     clickedButton.setBackgroundColor(Color.LTGRAY);
 
                     if (correctFinds == 1)
+<<<<<<< HEAD
                         tv1.setText("Sélectionne " + correctFinds-- + " produit qu’on trouve dans une patisserie?");
                     else
                         tv1.setText("Sélectionne " + correctFinds-- + " produits qu’on trouve dans une patisserie?");
+=======
+                        tv1.setText("Sélectionne " + correctFinds-- + " animal qu'on peut garder à la maison");
+                    else
+                        tv1.setText("Sélectionne " + correctFinds-- + " animaux qu'on peut garder à la maison");
+>>>>>>> FETCH_HEAD
                 }
                 if (correctFinds < 0) {
                     Intent intent = new Intent(getApplicationContext(), ShoppingInformationActivity_1.class);

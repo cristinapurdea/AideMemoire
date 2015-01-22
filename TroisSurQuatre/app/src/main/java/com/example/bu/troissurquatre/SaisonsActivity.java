@@ -98,9 +98,15 @@ public class SaisonsActivity extends Activity {
                     clickedButton.setBackgroundColor(Color.LTGRAY);
 
                     if (correctFinds == 1)
+<<<<<<< HEAD
                         tv1.setText("Sélectionne " + correctFinds-- + " objet necessaires pour se proteger de la pluie");
                     else
                         tv1.setText("Sélectionne " + correctFinds-- + " objets necessaires pour se proteger de la pluie");
+=======
+                        tv1.setText("Sélectionne " + correctFinds-- + " animal qu'on peut garder à la maison");
+                    else
+                        tv1.setText("Sélectionne " + correctFinds-- + " animaux qu'on peut garder à la maison");
+>>>>>>> FETCH_HEAD
                 }
                 if (correctFinds < 0) {
                     Intent intent = new Intent(getApplicationContext(), SaisonsInformationActivity.class);

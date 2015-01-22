@@ -54,7 +54,12 @@ public class SaisonsActivity_2 extends Activity {
         TextView tv4 = (TextView) findViewById(R.id.textView9);
         TextView tv5 = (TextView) findViewById(R.id.textView10);
 
+<<<<<<< HEAD
         tv1.setText("Mettez sur un bonhomme 3 vetements qu’on \n choisi pour sortir se promener?");
+=======
+        tv1.setText("Mettez sur un bonhomme 3 vetements qu’on choisi pour \n"+
+                "sortir se promener?");
+>>>>>>> FETCH_HEAD
         tv2.setText("Veste");
         tv3.setText("Jean/Pantalon");
         tv4.setText("Sac");
@@ -96,9 +101,15 @@ public class SaisonsActivity_2 extends Activity {
                     clickedButton.setBackgroundColor(Color.LTGRAY);
 
                     if (correctFinds == 1)
+<<<<<<< HEAD
                         tv1.setText("Sélectionne " + correctFinds-- + " vetement qu’on choisi pour sortir se promener");
                     else
                         tv1.setText("Sélectionne " + correctFinds-- + " vetements qu’on choisi pour sortir se promener");
+=======
+                        tv1.setText("Sélectionne " + correctFinds-- + " animal qu'on peut garder à la maison");
+                    else
+                        tv1.setText("Sélectionne " + correctFinds-- + " animaux qu'on peut garder à la maison");
+>>>>>>> FETCH_HEAD
                 }
                 if (correctFinds < 0) {
                     Intent intent = new Intent(getApplicationContext(), SaisonsInformationActivity_2.class);

@@ -23,9 +23,15 @@ public class SaisonsInformationActivity_2 extends Activity {
         Button button = (Button) findViewById(R.id.button);
         button.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
+<<<<<<< HEAD
 
                 Intent intent = new Intent(getApplicationContext(), MainActivity .class);
                 startActivity(intent);
+=======
+                //decomenter ceca
+                //Intent intent = new Intent(getApplicationContext(), SaisonsActivity_3.class);
+                //startActivity(intent);
+>>>>>>> FETCH_HEAD
             }
         });
 

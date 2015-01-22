@@ -71,6 +71,7 @@
             android:name=".ShoppingActivity"
             android:label="@string/title_activity_shopping"
             android:screenOrientation="landscape">
+<<<<<<< HEAD
         </activity>
         <activity
             android:name=".ShoppingActivity_1"
@@ -166,6 +167,8 @@
             android:name=".PromenadeInformationActivity_3"
             android:label="@string/title_activity_promenade"
             android:screenOrientation="landscape">
+=======
+>>>>>>> FETCH_HEAD
         </activity>
     </application>
 

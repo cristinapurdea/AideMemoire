@@ -7,7 +7,12 @@
     <string name="title_activity_help">HelpActivity</string>
     <string name="title_activity_information">InformationActivity</string>
     <string name="title_activity_maison">MaisonActivity</string>
+<<<<<<< HEAD
     <string name="title_activity_shopping">CadeauxActivity</string>
     <string name="title_activity_saisons">SaisonsActivity</string>
     <string name="title_activity_promenade">PromenadeActivity</string>
+=======
+    <string name="title_activity_shopping">ShoppingActivity</string>
+
+>>>>>>> FETCH_HEAD
 </resources>
