@@ -86,7 +86,7 @@
             android:textSize="30dp"/>
         <Button
             android:id="@+id/button_promenade"
-            android:background="@drawable/promenadeanglais"
+            android:background="@drawable/promenade"
             android:layout_width="300dp"
             android:layout_height="400dp"
             android:layout_alignParentRight="true"
