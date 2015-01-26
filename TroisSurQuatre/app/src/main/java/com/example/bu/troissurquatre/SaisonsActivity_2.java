@@ -96,16 +96,10 @@ public class SaisonsActivity_2 extends Activity {
                     clickedButton.setText("Bravo !");
                     clickedButton.setBackgroundColor(Color.LTGRAY);
 
-                    if (correctFinds == 1)
-<<<<<<< HEAD
+                    /*if (correctFinds == 1)
                         tv1.setText("Sélectionne " + correctFinds-- + " vetement qu’on choisi pour sortir se promener");
                     else
-                        tv1.setText("Sélectionne " + correctFinds-- + " vetements qu’on choisi pour sortir se promener");
-=======
-                        tv1.setText("Sélectionne " + correctFinds-- + " animal qu'on peut garder à la maison");
-                    else
-                        tv1.setText("Sélectionne " + correctFinds-- + " animaux qu'on peut garder à la maison");
->>>>>>> FETCH_HEAD
+                        tv1.setText("Sélectionne " + correctFinds-- + " vetements qu’on choisi pour sortir se promener");*/
                 }
                 if (correctFinds < 0) {
                     Intent intent = new Intent(getApplicationContext(), SaisonsInformationActivity_2.class);
