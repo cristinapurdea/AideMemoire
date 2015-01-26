@@ -95,10 +95,10 @@ public class MaisonActivity_2 extends Activity {
                     clickedButton.setText("Bravo !");
                     clickedButton.setBackgroundColor(Color.LTGRAY);
 
-                    if (correctFinds == 1)
+                    /*if (correctFinds == 1)
                         tv1.setText("Selectionnez " + correctFinds-- + " piece dans laquelle on peut trouver une télé ?");
                     else
-                        tv1.setText("Selectionnez " + correctFinds-- + " pieces dans lesquelles on peut trouver une télé ?");
+                        tv1.setText("Selectionnez " + correctFinds-- + " pieces dans lesquelles on peut trouver une télé ?");*/
 
                 }
                 if (correctFinds < 0) {

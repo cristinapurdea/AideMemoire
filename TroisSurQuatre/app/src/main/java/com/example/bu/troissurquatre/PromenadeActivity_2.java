@@ -94,10 +94,10 @@ public class PromenadeActivity_2 extends Activity {
                     clickedButton.setText("Bravo !");
                     clickedButton.setBackgroundColor(Color.LTGRAY);
 
-                    if (correctFinds == 1)
+                    /*if (correctFinds == 1)
                         tv1.setText("Selectionnez " + correctFinds-- + " animaux que vous pouvez trouver dans la rue");
                     else
-                        tv1.setText("Selectionnez " + correctFinds-- + " animal que vous pouvez trouver dans la rue");
+                        tv1.setText("Selectionnez " + correctFinds-- + " animal que vous pouvez trouver dans la rue");*/
 
                 }
                 if (correctFinds < 0) {

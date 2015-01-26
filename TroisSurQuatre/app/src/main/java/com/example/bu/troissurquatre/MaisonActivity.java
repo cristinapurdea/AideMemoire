@@ -43,7 +43,7 @@ public class MaisonActivity extends Activity {
         Drawable d1 = getResources().getDrawable(R.drawable.chat);
         Drawable d2 = getResources().getDrawable(R.drawable.chien);
         Drawable d3 = getResources().getDrawable(R.drawable.monkey);
-        Drawable d4 = getResources().getDrawable(R.drawable.horse);
+        Drawable d4 = getResources().getDrawable(R.drawable.poisson);
 
         bt1.setBackground(d1);
         bt2.setBackground(d2);
@@ -60,7 +60,7 @@ public class MaisonActivity extends Activity {
         tv2.setText("Chat");
         tv3.setText("Chien");
         tv4.setText("Singe");
-        tv5.setText("Cheval");
+        tv5.setText("Poisson");
     }
 
     @Override
@@ -97,10 +97,10 @@ public class MaisonActivity extends Activity {
                     clickedButton.setText("Bravo !");
                     clickedButton.setBackgroundColor(Color.LTGRAY);
 
-                    if (correctFinds == 1)
+                    /*if (correctFinds == 1)
                         tv1.setText("Sélectionne " + correctFinds-- + " animal qu'on peut garder à la maison");
                     else
-                        tv1.setText("Sélectionne " + correctFinds-- + " animaux qu'on peut garder à la maison");
+                        tv1.setText("Sélectionne " + correctFinds-- + " animaux qu'on peut garder à la maison");*/
                 }
                 if (correctFinds < 0) {
                     Intent intent = new Intent(getApplicationContext(), InformationActivity.class);

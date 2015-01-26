@@ -23,11 +23,8 @@ public class ShoppingActivity extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-<<<<<<< HEAD
-        setContentView(R.layout.activity_maison);
-=======
         setContentView(R.layout.activity_shopping);
->>>>>>> FETCH_HEAD
+
 
         final ImageButton button = (ImageButton) findViewById(R.id.imageButton4);
         button.setOnClickListener(new View.OnClickListener() {
@@ -92,23 +89,18 @@ public class ShoppingActivity extends Activity {
 
         if(!clickedButton.getText().equals("Bravo !")) {
 
-            if (clickedButton.getId() == R.id.answer_3)
+            if (clickedButton.getId() == R.id.answer_4)
                 clickedButton.setText("Réessayez");
             else {
                 if (correctFinds > -1) {
                     clickedButton.setText("Bravo !");
                     clickedButton.setBackgroundColor(Color.LTGRAY);
 
-                    if (correctFinds == 1)
-<<<<<<< HEAD
+                   /* if (correctFinds == 1)
                         tv1.setText("Sélectionne " + correctFinds-- + " fruit qu'on peut mettre dans le panier");
                     else
-                        tv1.setText("Sélectionne " + correctFinds-- + " fruits qu'on peut mettre dans le panier");
-=======
-                        tv1.setText("Sélectionne " + correctFinds-- + " animal qu'on peut garder à la maison");
-                    else
-                        tv1.setText("Sélectionne " + correctFinds-- + " animaux qu'on peut garder à la maison");
->>>>>>> FETCH_HEAD
+                        tv1.setText("Sélectionne " + correctFinds-- + " fruits qu'on peut mettre dans le panier");*/
+
                 }
                 if (correctFinds < 0) {
                     Intent intent = new Intent(getApplicationContext(), InformationActivity.class);

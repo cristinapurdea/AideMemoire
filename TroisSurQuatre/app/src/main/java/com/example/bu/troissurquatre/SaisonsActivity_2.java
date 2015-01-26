@@ -54,12 +54,8 @@ public class SaisonsActivity_2 extends Activity {
         TextView tv4 = (TextView) findViewById(R.id.textView9);
         TextView tv5 = (TextView) findViewById(R.id.textView10);
 
-<<<<<<< HEAD
+
         tv1.setText("Mettez sur un bonhomme 3 vetements qu’on \n choisi pour sortir se promener?");
-=======
-        tv1.setText("Mettez sur un bonhomme 3 vetements qu’on choisi pour \n"+
-                "sortir se promener?");
->>>>>>> FETCH_HEAD
         tv2.setText("Veste");
         tv3.setText("Jean/Pantalon");
         tv4.setText("Sac");
@@ -93,7 +89,7 @@ public class SaisonsActivity_2 extends Activity {
 
         if(!clickedButton.getText().equals("Bravo !")) {
 
-            if (clickedButton.getId() == R.id.answer_3)
+            if (clickedButton.getId() == R.id.answer_4)
                 clickedButton.setText("Réessayez");
             else {
                 if (correctFinds > -1) {

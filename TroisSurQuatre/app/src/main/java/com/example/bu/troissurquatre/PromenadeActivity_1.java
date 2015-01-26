@@ -95,10 +95,10 @@ public class PromenadeActivity_1 extends Activity {
                     clickedButton.setText("Bravo !");
                     clickedButton.setBackgroundColor(Color.LTGRAY);
 
-                    if (correctFinds == 1)
+                    /*if (correctFinds == 1)
                         tv1.setText("Sélectionnez " + correctFinds-- + " endroits pour garer la voiture ");
                     else
-                        tv1.setText("Sélectionnez " + correctFinds-- + " endroit pour garer la voiture ");
+                        tv1.setText("Sélectionnez " + correctFinds-- + " endroit pour garer la voiture ");*/
 
                 }
                 if (correctFinds < 0) {

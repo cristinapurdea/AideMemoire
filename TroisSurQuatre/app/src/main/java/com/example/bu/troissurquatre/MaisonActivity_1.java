@@ -97,10 +97,10 @@ public class MaisonActivity_1 extends Activity {
                     clickedButton.setText("Bravo !");
                     clickedButton.setBackgroundColor(Color.LTGRAY);
 
-                    if (correctFinds == 1)
+                    /*if (correctFinds == 1)
                         tv1.setText("Sélectionnez " + correctFinds-- + " objet qu'on peut trouver dans une chambre");
                     else
-                        tv1.setText("Sélectionnez " + correctFinds-- + " objets qu'on peut trouver dans une chambre");
+                        tv1.setText("Sélectionnez " + correctFinds-- + " objets qu'on peut trouver dans une chambre");*/
 
                 }
                 if (correctFinds < 0) {

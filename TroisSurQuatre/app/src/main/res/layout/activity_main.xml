@@ -80,7 +80,7 @@
             android:adjustViewBounds="true"
             android:scaleType="fitCenter"
             android:layout_gravity="center"
-            android:text="Cadeaux"
+            android:text="Courses"
             android:textStyle="bold"
             android:gravity="bottom|center"
             android:textSize="30dp"/>

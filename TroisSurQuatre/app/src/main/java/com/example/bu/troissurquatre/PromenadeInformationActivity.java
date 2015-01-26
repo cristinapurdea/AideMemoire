@@ -27,7 +27,7 @@ public class PromenadeInformationActivity extends Activity {
         });
 
         TextView tv = (TextView) findViewById(R.id.textView5);
-        tv.setText("Savez-vous queles français préfèrent marcher à pied ou prendre le vélo \n au lieu de prendre la voiture parce que c'est bon pour la santé. \n" );
+        tv.setText("Savez-vous que les français préfèrent marcher à pied ou prendre le vélo \n au lieu de prendre la voiture car c'est bon pour la santé. \n" );
 
         ImageView iv = (ImageView) findViewById(R.id.imageView2);
         iv.setImageResource(R.drawable.info_img);

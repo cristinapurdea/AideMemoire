@@ -54,7 +54,7 @@ public class PromenadeActivity extends Activity {
         TextView tv4 = (TextView) findViewById(R.id.textView9);
         TextView tv5 = (TextView) findViewById(R.id.textView10);
 
-        tv1.setText("Choisissez 3 moyens de transport pour se deplacer en ville ?");
+        tv1.setText("Choisissez 3 moyens de transport pour se déplacer en ville ?");
         tv2.setText("Bus");
         tv3.setText("Avion");
         tv4.setText("Train");
@@ -88,17 +88,17 @@ public class PromenadeActivity extends Activity {
 
         if(!clickedButton.getText().equals("Bravo !")) {
 
-            if (clickedButton.getId() == R.id.answer_1)
+            if (clickedButton.getId() == R.id.answer_2)
                 clickedButton.setText("Réessayez");
             else {
                 if (correctFinds > -1) {
                     clickedButton.setText("Bravo !");
                     clickedButton.setBackgroundColor(Color.LTGRAY);
 
-                    if (correctFinds == 1)
+                   /*if (correctFinds == 1)
                         tv1.setText("Sélectionne " + correctFinds-- + " moyens de transport pour se deplacer en ville");
                     else
-                        tv1.setText("Sélectionne " + correctFinds-- + " moyen de transport pour se deplacer en ville");
+                        tv1.setText("Sélectionne " + correctFinds-- + " moyen de transport pour se deplacer en ville");*/
                 }
                 if (correctFinds < 0) {
                     Intent intent = new Intent(getApplicationContext(), PromenadeInformationActivity.class);

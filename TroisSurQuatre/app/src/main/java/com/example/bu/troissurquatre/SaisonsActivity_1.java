@@ -92,23 +92,18 @@ public class SaisonsActivity_1 extends Activity {
 
         if(!clickedButton.getText().equals("Bravo !")) {
 
-            if (clickedButton.getId() == R.id.answer_3)
+            if (clickedButton.getId() == R.id.answer_4)
                 clickedButton.setText("Réessayez");
             else {
                 if (correctFinds > -1) {
                     clickedButton.setText("Bravo !");
                     clickedButton.setBackgroundColor(Color.LTGRAY);
 
-                    if (correctFinds == 1)
-<<<<<<< HEAD
+                    /*if (correctFinds == 1)
                         tv1.setText("Sélectionne " + correctFinds-- + " objet qu’on peut prendre pour aller à la plage");
                     else
-                        tv1.setText("Sélectionne " + correctFinds-- + " objets qu’on peut prendre pour aller à la plage");
-=======
-                        tv1.setText("Sélectionne " + correctFinds-- + " animal qu'on peut garder à la maison");
-                    else
-                        tv1.setText("Sélectionne " + correctFinds-- + " animaux qu'on peut garder à la maison");
->>>>>>> FETCH_HEAD
+                        tv1.setText("Sélectionne " + correctFinds-- + " objets qu’on peut prendre pour aller à la plage");*/
+
                 }
                 if (correctFinds < 0) {
                     Intent intent = new Intent(getApplicationContext(), SaisonsInformationActivity_1.class);
