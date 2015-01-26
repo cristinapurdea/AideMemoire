@@ -94,6 +94,7 @@ public class MaisonActivity_2 extends Activity {
                 if (correctFinds > -1) {
                     clickedButton.setText("Bravo !");
                     clickedButton.setBackgroundColor(Color.LTGRAY);
+                    correctFinds--;
 
                     /*if (correctFinds == 1)
                         tv1.setText("Selectionnez " + correctFinds-- + " piece dans laquelle on peut trouver une télé ?");

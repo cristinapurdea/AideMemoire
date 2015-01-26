@@ -96,7 +96,7 @@ public class MaisonActivity extends Activity {
                 if (correctFinds > -1) {
                     clickedButton.setText("Bravo !");
                     clickedButton.setBackgroundColor(Color.LTGRAY);
-
+                    correctFinds--;
                     /*if (correctFinds == 1)
                         tv1.setText("Sélectionne " + correctFinds-- + " animal qu'on peut garder à la maison");
                     else

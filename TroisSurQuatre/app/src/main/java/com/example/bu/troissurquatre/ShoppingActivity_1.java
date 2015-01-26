@@ -94,6 +94,7 @@ public class ShoppingActivity_1 extends Activity {
                 if (correctFinds > -1) {
                     clickedButton.setText("Bravo !");
                     clickedButton.setBackgroundColor(Color.LTGRAY);
+                    correctFinds--;
 
                     /*if (correctFinds == 1)
                         tv1.setText("Sélectionne " + correctFinds-- + " produit qu’on trouve dans une patisserie?");

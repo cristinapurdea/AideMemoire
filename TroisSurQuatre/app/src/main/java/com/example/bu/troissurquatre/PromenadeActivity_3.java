@@ -93,6 +93,7 @@ public class PromenadeActivity_3 extends Activity {
                 if (correctFinds > -1) {
                     clickedButton.setText("Bravo !");
                     clickedButton.setBackgroundColor(Color.LTGRAY);
+                    correctFinds--;
 
                     /*if (correctFinds == 1)
                         tv1.setText("Choisir " + correctFinds-- + "  panneaux qu’on peut voir dans la rue ");

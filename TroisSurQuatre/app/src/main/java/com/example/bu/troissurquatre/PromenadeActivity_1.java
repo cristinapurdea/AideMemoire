@@ -94,6 +94,7 @@ public class PromenadeActivity_1 extends Activity {
                 if (correctFinds > -1) {
                     clickedButton.setText("Bravo !");
                     clickedButton.setBackgroundColor(Color.LTGRAY);
+                    correctFinds--;
 
                     /*if (correctFinds == 1)
                         tv1.setText("Sélectionnez " + correctFinds-- + " endroits pour garer la voiture ");

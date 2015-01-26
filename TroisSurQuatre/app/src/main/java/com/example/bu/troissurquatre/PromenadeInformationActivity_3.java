@@ -27,7 +27,7 @@ public class PromenadeInformationActivity_3 extends Activity {
         });
 
         TextView tv = (TextView) findViewById(R.id.textView5);
-        tv.setText("Le non-respect des dispositions du code de la route expose le contrevenant à des sanctions de divers niveaux,\n selon la gravité de l'infraction." );
+        tv.setText("Le non-respect des dispositions du code de la route expose le contrevenant à des sanctions de divers niveaux, selon la gravité de l'infraction." );
 
         ImageView iv = (ImageView) findViewById(R.id.imageView2);
         iv.setImageResource(R.drawable.info_img);

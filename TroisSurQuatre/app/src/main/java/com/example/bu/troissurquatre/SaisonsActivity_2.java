@@ -38,10 +38,10 @@ public class SaisonsActivity_2 extends Activity {
         Button bt3 = (Button) findViewById(R.id.answer_3);
         Button bt4 = (Button) findViewById(R.id.answer_4);
 
-        Drawable d1 = getResources().getDrawable(R.drawable.paraploie);
-        Drawable d2 = getResources().getDrawable(R.drawable.bottes);
-        Drawable d3 = getResources().getDrawable(R.drawable.impermeable);
-        Drawable d4 = getResources().getDrawable(R.drawable.lunnetes);
+        Drawable d1 = getResources().getDrawable(R.drawable.veste);
+        Drawable d2 = getResources().getDrawable(R.drawable.jean);
+        Drawable d3 = getResources().getDrawable(R.drawable.sac);
+        Drawable d4 = getResources().getDrawable(R.drawable.pantoufle);
 
         bt1.setBackground(d1);
         bt2.setBackground(d2);
@@ -55,9 +55,9 @@ public class SaisonsActivity_2 extends Activity {
         TextView tv5 = (TextView) findViewById(R.id.textView10);
 
 
-        tv1.setText("Mettez sur un bonhomme 3 vetements qu’on \n choisi pour sortir se promener?");
+        tv1.setText("Mettez sur un bonhomme 3 vetements qu’on \n choisit pour sortir se promener?");
         tv2.setText("Veste");
-        tv3.setText("Jean/Pantalon");
+        tv3.setText("Jean");
         tv4.setText("Sac");
         tv5.setText("Pantoufles");
     }
@@ -95,6 +95,7 @@ public class SaisonsActivity_2 extends Activity {
                 if (correctFinds > -1) {
                     clickedButton.setText("Bravo !");
                     clickedButton.setBackgroundColor(Color.LTGRAY);
+                    correctFinds--;
 
                     /*if (correctFinds == 1)
                         tv1.setText("Sélectionne " + correctFinds-- + " vetement qu’on choisi pour sortir se promener");

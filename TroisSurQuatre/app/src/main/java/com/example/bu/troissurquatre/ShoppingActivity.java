@@ -42,7 +42,7 @@ public class ShoppingActivity extends Activity {
         Drawable d1 = getResources().getDrawable(R.drawable.banane);
         Drawable d2 = getResources().getDrawable(R.drawable.pomme);
         Drawable d3 = getResources().getDrawable(R.drawable.fraise);
-        Drawable d4 = getResources().getDrawable(R.drawable.tomate);
+        Drawable d4 = getResources().getDrawable(R.drawable.carotte);
 
         bt1.setBackground(d1);
         bt2.setBackground(d2);
@@ -59,7 +59,7 @@ public class ShoppingActivity extends Activity {
         tv2.setText("Banane");
         tv3.setText("Pomme");
         tv4.setText("Fraise");
-        tv5.setText("Tomate");
+        tv5.setText("Carotte");
     }
 
     @Override
@@ -95,6 +95,7 @@ public class ShoppingActivity extends Activity {
                 if (correctFinds > -1) {
                     clickedButton.setText("Bravo !");
                     clickedButton.setBackgroundColor(Color.LTGRAY);
+                    correctFinds--;
 
                    /* if (correctFinds == 1)
                         tv1.setText("Sélectionne " + correctFinds-- + " fruit qu'on peut mettre dans le panier");
@@ -103,7 +104,7 @@ public class ShoppingActivity extends Activity {
 
                 }
                 if (correctFinds < 0) {
-                    Intent intent = new Intent(getApplicationContext(), InformationActivity.class);
+                    Intent intent = new Intent(getApplicationContext(), ShoppingInformationActivity.class);
                     startActivity(intent);
                 }
             }

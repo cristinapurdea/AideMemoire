@@ -39,10 +39,10 @@ public class SaisonsActivity_1 extends Activity {
         Button bt4 = (Button) findViewById(R.id.answer_4);
 
         //Change s'il vous plait
-        Drawable d1 = getResources().getDrawable(R.drawable.paraploie);
-        Drawable d2 = getResources().getDrawable(R.drawable.bottes);
-        Drawable d3 = getResources().getDrawable(R.drawable.impermeable);
-        Drawable d4 = getResources().getDrawable(R.drawable.lunnetes);
+        Drawable d1 = getResources().getDrawable(R.drawable.lunnetes);
+        Drawable d2 = getResources().getDrawable(R.drawable.creme);
+        Drawable d3 = getResources().getDrawable(R.drawable.serviette);
+        Drawable d4 = getResources().getDrawable(R.drawable.veste);
 
         bt1.setBackground(d1);
         bt2.setBackground(d2);
@@ -98,6 +98,7 @@ public class SaisonsActivity_1 extends Activity {
                 if (correctFinds > -1) {
                     clickedButton.setText("Bravo !");
                     clickedButton.setBackgroundColor(Color.LTGRAY);
+                    correctFinds--;
 
                     /*if (correctFinds == 1)
                         tv1.setText("Sélectionne " + correctFinds-- + " objet qu’on peut prendre pour aller à la plage");

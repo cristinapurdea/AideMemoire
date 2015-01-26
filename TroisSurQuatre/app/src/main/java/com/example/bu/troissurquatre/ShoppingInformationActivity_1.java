@@ -29,7 +29,7 @@ public class ShoppingInformationActivity_1 extends Activity {
         });
 
         TextView tv = (TextView) findViewById(R.id.textView5);
-        tv.setText("Savez vous que le gateau de rois est traditionnellement \n dégustée en Provence, lors de l'Épiphanie?" );
+        tv.setText("Savez vous que la galette des rois est traditionnellement \n dégustée lors de l'Épiphanie ?" );
 
         ImageView iv = (ImageView) findViewById(R.id.imageView2);
         iv.setImageResource(R.drawable.info_img);

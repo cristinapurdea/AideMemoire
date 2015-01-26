@@ -94,6 +94,7 @@ public class MaisonActivity_3 extends Activity {
                 if (correctFinds > -1) {
                     clickedButton.setText("Bravo !");
                     clickedButton.setBackgroundColor(Color.LTGRAY);
+                    correctFinds--;
 
                     /*if (correctFinds == 1)
                         tv1.setText("Choisir " + correctFinds-- + " tâche que l’on peut faire le matin ");

@@ -27,7 +27,7 @@ public class ShoppingInformationActivity_2 extends Activity {
         });
 
         TextView tv = (TextView) findViewById(R.id.textView5);
-        tv.setText("Savez vous que les produits latieres contiennent beaucoup des proteines" );
+        tv.setText("Savez vous que les produits laitiers contiennent beaucoup des proteines" );
 
         ImageView iv = (ImageView) findViewById(R.id.imageView2);
         iv.setImageResource(R.drawable.info_img);

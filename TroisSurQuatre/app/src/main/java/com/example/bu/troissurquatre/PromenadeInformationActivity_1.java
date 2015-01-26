@@ -27,7 +27,7 @@ public class PromenadeInformationActivity_1 extends Activity {
         });
 
         TextView tv = (TextView) findViewById(R.id.textView5);
-        tv.setText("Savez vous qu'en France Parking dans la plupart des villes ne est pas un tel problème ou aussi cher que dans beaucoup d'autres pays européens.\n"+" Toutefois, le stationnement est généralement limitée dans les villes et interdite dans certaines zones ." );
+        tv.setText("Saviez-vous que la premiere voiture inventée marchait à la vapeur ?" );
 
         ImageView iv = (ImageView) findViewById(R.id.imageView2);
         iv.setImageResource(R.drawable.info_img);

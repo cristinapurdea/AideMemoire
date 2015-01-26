@@ -29,7 +29,7 @@ public class SaisonsInformationActivity extends Activity {
         });
 
         TextView tv = (TextView) findViewById(R.id.textView5);
-        tv.setText("?" );
+        tv.setText("" );
 
         ImageView iv = (ImageView) findViewById(R.id.imageView2);
         iv.setImageResource(R.drawable.info_img);

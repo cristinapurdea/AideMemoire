@@ -58,7 +58,7 @@ public class PromenadeActivity_2 extends Activity {
         tv2.setText("Chat");
         tv3.setText("Chien");
         tv4.setText("Pigeon");
-        tv5.setText("Giraffe");
+        tv5.setText("Girafe");
 
     }
 
@@ -93,6 +93,7 @@ public class PromenadeActivity_2 extends Activity {
                 if (correctFinds > -1) {
                     clickedButton.setText("Bravo !");
                     clickedButton.setBackgroundColor(Color.LTGRAY);
+                    correctFinds--;
 
                     /*if (correctFinds == 1)
                         tv1.setText("Selectionnez " + correctFinds-- + " animaux que vous pouvez trouver dans la rue");

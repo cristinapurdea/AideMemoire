@@ -54,10 +54,9 @@ public class SaisonsActivity extends Activity {
         TextView tv4 = (TextView) findViewById(R.id.textView9);
         TextView tv5 = (TextView) findViewById(R.id.textView10);
 
-        tv1.setText("Il pleut. Prenez dans le placard 3 objets necessaires? ” \n" +
-                "(image de la pluie +son/ ou image de placard)");
+        tv1.setText("Il pleut. Prenez dans le placard 3 objets necessaires ? ");
         tv2.setText("Parapluie");
-        tv3.setText("Bottes en caoutchouc");
+        tv3.setText("Bottes");
         tv4.setText("Impermeable");
         tv5.setText("Lunettes");
 
@@ -96,6 +95,7 @@ public class SaisonsActivity extends Activity {
                 if (correctFinds > -1) {
                     clickedButton.setText("Bravo !");
                     clickedButton.setBackgroundColor(Color.LTGRAY);
+                    correctFinds--;
 
                     /*if (correctFinds == 1)
                         tv1.setText("Sélectionne " + correctFinds-- + " objet necessaires pour se proteger de la pluie");
