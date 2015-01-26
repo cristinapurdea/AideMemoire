@@ -73,7 +73,7 @@
     android:gravity="center">
         <Button
             android:id="@+id/button_shopping"
-            android:background="@drawable/shopping"
+            android:background="@drawable/courses"
             android:layout_width="300dp"
             android:layout_height="400dp"
             android:layout_alignParentLeft="true"
