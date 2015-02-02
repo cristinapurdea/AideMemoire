@@ -23,7 +23,7 @@ public class ShoppingActivity extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_shopping);
+        setContentView(R.layout.activity_maison);
 
 
         final ImageButton button = (ImageButton) findViewById(R.id.imageButton4);
