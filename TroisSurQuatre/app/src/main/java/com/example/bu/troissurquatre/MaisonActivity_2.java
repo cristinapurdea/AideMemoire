@@ -87,10 +87,14 @@ public class MaisonActivity_2 extends Activity {
 
     public void buttonClick(View v) {
         Button clickedButton = (Button) findViewById(v.getId());
+        TextView textReessayez = (TextView) findViewById(R.id.reessayer);
+        textReessayez.setText("");
+
         if (!clickedButton.getText().equals("Bravo !")) {
-            if (clickedButton.getId() == R.id.answer_1)
-                clickedButton.setText("Réessayez");
-            else {
+            if (clickedButton.getId() == R.id.answer_1){
+                //clickedButton.setText("Réessayez");
+                textReessayez.setText("Réessayez");
+            }else {
                 if (correctFinds > -1) {
                     clickedButton.setText("Bravo !");
                     clickedButton.setBackgroundColor(Color.LTGRAY);
